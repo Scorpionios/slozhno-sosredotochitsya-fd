@@ -1,12 +1,47 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --base-color: #FF8DCB;
+  --background-image: url(../images/cover-image-light.png);
+  --background-color: #FFF1F7;
+  --color-angles: var(--grey);
+  --color-header__theme-menu-list: var(--grey);
+  --color-button-hover: #32312D66;
+  --color-title: #FFC2E6;
+  --color-title-section: var(--grey);
+  --color-title-card: var(--grey);
+  --color-text: var(--grey);
 }
+
+:root.theme-light .lamp {
+  opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  :root.theme-light .footer_title {
+    --accent-color: #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --base-color: #FF8DCB;
+    --background-image: url(../images/cover-image-light.png);
+    --background-color: #FFF1F7;
+    --color-angles: var(--grey);
+    --color-header__theme-menu-list: var(--grey);
+    --color-button-hover: #32312D66;
+      --color-title: #FFC2E6;
+    --color-title-section: var(--grey);
+    --color-title-card: var(--grey);
+    --color-text: var(--grey);
+  }
+
+  .lamp {
+    opacity: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .footer_title {
+      --accent-color: #FF0070;
+    }
+  }
+} 
