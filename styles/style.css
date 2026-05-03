@@ -105,7 +105,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-.header_text{
+.header_text {
   align-self: start;
   margin-top: 30px;
 }
@@ -145,6 +145,7 @@
   background-color: var(--background-color-title);
   color: var(--color-title-card);
   font-weight: 700;
+  font-size: 1em;
 }
 
 .card_paragraph {
